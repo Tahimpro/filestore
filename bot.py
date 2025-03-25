@@ -74,16 +74,16 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/VJ_Botz")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/+YWmZpbu5podkM2E1")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="aboutdevs"),
+                        InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/VJ_Bot_Disscussion"),
-                        InlineKeyboardButton("YouTube Channel", url="https://youtube.com/@Tech_VJ")
+                        InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/CpFlicks_Support"),
+                        InlineKeyboardButton("ᴘɪʀᴏ", url="https://t.me/TheBongPirate")
                     ]
                 ]
             )
@@ -124,7 +124,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/VJ_Bot_Disscussion)",
+            await message.reply_text("Sorry, You are banned!\n\nContact owner",
                                      disable_web_page_preview=True)
             return
 
@@ -152,7 +152,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=VJBotz_{str_to_b64(file_er_id)}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=tbp_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -318,12 +318,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://youtube.com/@Tech_VJ")
+                        InlineKeyboardButton("ᴘɪʀᴏ",
+                                             url="https://t.me/TheBongPirate")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -336,12 +336,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://youtube.com/@Tech_VJ")
+                        InlineKeyboardButton("ᴘɪʀᴏ",
+                                             url="https://t.me/TheBongPirate")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="gotohome")
                     ]
                 ]
             )
@@ -354,16 +354,16 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/VJ_Botz")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/+YWmZpbu5podkM2E1")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="aboutdevs"),
+                        InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/VJ_Bot_Disscussion"),
-                        InlineKeyboardButton("YouTube Channel", url="https://youtube.com/@Tech_VJ")
+                        InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/CpFlicks_Support"),
+                        InlineKeyboardButton("ᴘɪʀᴏ", url="https://t.me/TheBongPirate")
                     ]
                 ]
             )
@@ -379,14 +379,14 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/VJ_Bot_Disscussion).",
+                        text="Sorry Sir, You are Banned to use me.",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**I like Your Smartness But Don't Be Oversmart! 😑**\n\n",
+                    text="**𝙷𝚞𝚖𝚜𝚎 𝚃𝚘𝚙𝚒𝚋𝚊𝚊𝚣𝚒 𝚗𝚑𝚒 𝚋𝚑𝚊𝚒𝚢𝚊 😑**\n\n",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/VJ_Bot_Disscussion).",
+                    text="Something went Wrong. Contact my owner.",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,12 +411,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/VJ_Botz"),
-                        InlineKeyboardButton("Support Group", url="https://t.me/VJ_Bot_Disscussion")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/+YWmZpbu5podkM2E1"),
+                        InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/CpFlicks_Support")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data="aboutdevs")
                     ]
                 ]
             )
