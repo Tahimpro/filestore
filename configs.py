@@ -1,11 +1,11 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
+  API_ID = int(os.environ.get("API_ID", "16531092"))
+  API_HASH = os.environ.get("API_HASH", "b073b97bd4c8c56616fc2cbbd4da845a")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "8187553894:AAHXagaYfsFWlytnFmsFqKa45sGnjF5YXzM")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "viagracorn_bot")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002549623560"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
